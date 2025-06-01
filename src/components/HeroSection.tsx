@@ -6,16 +6,13 @@ import { Play, Send, Users } from 'lucide-react';
 const HeroSection = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden">
-      {/* Video Background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1920&h=1080&fit=crop&crop=center" type="video/mp4" />
-      </video>
+      {/* Background Image from YouTube thumbnail */}
+      <div 
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('https://img.youtube.com/vi/LETGMmEFgjA/maxresdefault.jpg')`
+        }}
+      />
       
       {/* Overlay */}
       <div className="absolute inset-0 hero-video-overlay" />
